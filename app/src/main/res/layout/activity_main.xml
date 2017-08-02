@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vishal.intentsimpletest.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Result From Child Activity"
+        android:layout_below="@+id/editText0"
+        android:layout_alignLeft="@+id/editText0"
+        android:layout_alignStart="@+id/editText0" />
+
+    <Button
+        android:id="@+id/sendMessageUsingPutExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PutExtra"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/sendMessageUsingPutExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PutExtras (Bundle)"
+        android:layout_alignBaseline="@+id/sendMessageUsingPutExtra"
+        android:layout_alignBottom="@+id/sendMessageUsingPutExtra"
+        android:layout_toRightOf="@+id/sendMessageUsingPutExtra"
+        android:layout_toEndOf="@+id/sendMessageUsingPutExtra" />
+</RelativeLayout>
