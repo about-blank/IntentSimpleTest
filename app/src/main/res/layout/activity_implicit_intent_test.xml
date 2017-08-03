@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vishal.intentsimpletest.ImplicitIntentTestActivity">
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:hint="Enter URL or Phone# or co-ordinates"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textField"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openDialer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dial" />
+
+        <Button
+            android:id="@+id/openURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Browse" />
+
+        <Button
+            android:id="@+id/openMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/linearlayout01"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openPhoneContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Phone" />
+
+        <Button
+            android:id="@+id/openContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Contact" />
+
+        <Button
+            android:id="@+id/saveContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Contact" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/linearlayout02"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/openGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gallery" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText editText;
     private String TAG;
 
-    private Button buttonPutExtra, buttonPutExtras;
+    private Button buttonPutExtra, buttonPutExtras, buttonTestImplicitIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkBox = (CheckBox) findViewById(R.id.checkBox2);
         buttonPutExtra = (Button) findViewById(R.id.sendMessageUsingPutExtra);
         buttonPutExtras = (Button) findViewById(R.id.sendMessageUsingPutExtras);
+        buttonTestImplicitIntent = (Button) findViewById(R.id.testImplicitIntent);
 
         buttonPutExtra.setOnClickListener(this);
         buttonPutExtras.setOnClickListener(this);
+        buttonTestImplicitIntent.setOnClickListener(this);
 
         editText = (EditText) findViewById(R.id.editText0);
     }
@@ -91,6 +93,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else {
                     startActivity(i2);
                 }
+                break;
+            case R.id.testImplicitIntent:
+                Intent i3 = new Intent(this, ImplicitIntentTestActivity.class);
+                startActivity(i3);
                 break;
         }
     }

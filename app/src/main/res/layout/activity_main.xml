@@ -47,4 +47,17 @@
         android:layout_alignBottom="@+id/sendMessageUsingPutExtra"
         android:layout_toRightOf="@+id/sendMessageUsingPutExtra"
         android:layout_toEndOf="@+id/sendMessageUsingPutExtra" />
+
+    <Button
+        android:id="@+id/testImplicitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Test Implicit Intents"
+        android:layout_below="@+id/sendMessageUsingPutExtra"
+        android:layout_alignLeft="@+id/sendMessageUsingPutExtra"
+        android:layout_alignStart="@+id/sendMessageUsingPutExtra"
+        android:layout_alignRight="@+id/editText0"
+        android:layout_alignEnd="@+id/editText0" />
+
 </RelativeLayout>
